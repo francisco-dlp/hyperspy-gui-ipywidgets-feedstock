@@ -27,8 +27,9 @@ requirements:
   run:
     - python
     - link-traits
-    - hyperspy >=1.4
+    - hyperspy >=1.4.1
     - ipywidgets >=6.0
+    - pillow >5.2
 
 test:
   imports:
@@ -39,7 +40,6 @@ test:
     - py.test --pyargs hyperspy_gui_ipywidgets  # [unix]
 
   requires:
-    - pillow >5.2
     - pytest
 
 about:
